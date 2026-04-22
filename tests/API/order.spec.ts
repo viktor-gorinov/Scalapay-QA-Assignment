@@ -1,11 +1,14 @@
 import { test, expect } from '@playwright/test';
+import dotenv from 'dotenv';
+dotenv.config();
 
 test('Validate GET /v2/payments/{token}', async ({ request }) => {
+  const baseUrl = process.env.BASE_URL;
   const response = await request.get(
-    'https://integration.api.scalapay.com/v2/payments/A1KQ7URT63',
+    `${baseUrl}/v2/payments/A1KQ7URT63`,
     {
       headers: {
-        Authorization: 'Bearer qhtfs87hjnc12kkos'
+        Authorization: `Bearer ${process.env.API_TOKEN}`
       }
     }
   );

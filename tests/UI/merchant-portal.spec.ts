@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
+import dotenv from 'dotenv';
+dotenv.config();
 
 test('Login and validate Account page', async ({ page }) => {
-  await page.goto('https://partner.development.scalapay.com/login');
+  await page.goto(process.env.UI_URL!);
 
 // Fill credentials
 await page.fill('#email', 'viktor.gorinov@accedia.com');
