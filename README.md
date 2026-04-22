@@ -16,8 +16,7 @@ This project contains automated tests for:
 ## Setup Instructions
 
 ### 1. Install dependencies
-Bash
-npm install
+Bash -> npm install
 
 ### 2. Install Playwright browsers
 Bash -> npx playwright install
