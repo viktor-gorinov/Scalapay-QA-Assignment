@@ -36,6 +36,6 @@ Bash
 npx playwright test tests/api
 
 **Notes**
-Tests use stable selectors (data-automation, IDs)
-API assertions validate both structure and business logic
-UI tests follow login → navigation → validation flow
+- Tests use stable selectors (data-automation, IDs)
+- API assertions validate both structure and business logic
+- UI tests follow login → navigation → validation flow
