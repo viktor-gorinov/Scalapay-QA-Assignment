@@ -20,22 +20,18 @@ Bash
 npm install
 
 ### 2. Install Playwright browsers
-Bash
-npx playwright install
+Bash -> npx playwright install
 
 ### 3. Run all tests
-Bash
-npx playwright test
+Bash -> npx playwright test
 
 ### 4. Run UI tests only
-Bash
-npx playwright test tests/ui
+Bash -> npx playwright test tests/ui
 
 ### 5. Run API tests only
-Bash
-npx playwright test tests/api
+Bash -> npx playwright test tests/api
 
 **Notes**
 - Tests use stable selectors (data-automation, IDs)
 - API assertions validate both structure and business logic
-- UI tests follow login → navigation → validation flow
+- UI tests follow login -> navigation -> validation flow
