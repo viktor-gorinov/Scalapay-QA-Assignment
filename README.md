@@ -21,13 +21,27 @@ Bash -> npm install
 ### 2. Install Playwright browsers
 Bash -> npx playwright install
 
-### 3. Run all tests
+### 3. Environment Variables
+
+This project uses environment variables to manage sensitive configuration.
+
+1. Create a .env file in the root directory:
+API_TOKEN=your_token_here
+BASE_URL=https://integration.api.scalapay.com
+UI_URL=https://partner.development.scalapay.com/login
+
+2. Notes
+- The .env file is not committed to version control
+- A .env.example file is provided as a template
+- All sensitive data is loaded using dotenv
+
+### 4. Run all tests
 Bash -> npx playwright test
 
-### 4. Run UI tests only
+### 5. Run UI tests only
 Bash -> npx playwright test tests/ui
 
-### 5. Run API tests only
+### 6. Run API tests only
 Bash -> npx playwright test tests/api
 
 **How to run in headed mode (optional)**
