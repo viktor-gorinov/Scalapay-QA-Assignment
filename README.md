@@ -30,6 +30,9 @@ Bash -> npx playwright test tests/ui
 ### 5. Run API tests only
 Bash -> npx playwright test tests/api
 
+**How to run in headed mode (optional)**
+- npx playwright test --headed
+
 **Notes**
 - Tests use stable selectors (data-automation, IDs)
 - API assertions validate both structure and business logic
