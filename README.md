@@ -26,8 +26,8 @@ Bash -> npx playwright install
 This project uses environment variables to manage sensitive configuration.
 
 1. Create a .env file in the root directory:
-API_TOKEN=your_token_here
-BASE_URL=https://integration.api.scalapay.com
+API_TOKEN=your_token_here, 
+BASE_URL=https://integration.api.scalapay.com, 
 UI_URL=https://partner.development.scalapay.com/login
 
 2. Notes
