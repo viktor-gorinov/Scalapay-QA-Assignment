@@ -36,16 +36,20 @@ UI_URL=https://partner.development.scalapay.com/login
 - All sensitive data is loaded using dotenv
 
 ### 4. Run all tests
-Bash -> npx playwright test
+- Bash -> npx playwright test
+- npx playwright test --headed (optional)
+- npx playwright test --debug (optional)
 
 ### 5. Run UI tests only
-Bash -> npx playwright test tests/ui
+- Bash -> npx playwright test tests/ui
+- npx playwright test tests/ui --headed (optional)
+- npx playwright test tests/ui --debug (optional)
 
 ### 6. Run API tests only
-Bash -> npx playwright test tests/api
+- Bash -> npx playwright test tests/api
+- npx playwright test tests/api --headed (optional)
+- npx playwright test tests/api --debug (optional)
 
-**How to run in headed mode (optional)**
-- npx playwright test --headed
 
 **Notes**
 - Tests use stable selectors (data-automation, IDs)
