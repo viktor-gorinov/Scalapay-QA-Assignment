@@ -47,8 +47,6 @@ UI_URL=https://partner.development.scalapay.com/login
 
 ### 6. Run API tests only
 - Bash -> npx playwright test tests/api
-- npx playwright test tests/api --headed (optional)
-- npx playwright test tests/api --debug (optional)
 
 
 **Notes**
